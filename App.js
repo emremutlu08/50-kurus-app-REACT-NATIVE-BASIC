@@ -1,7 +1,8 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@rneui/themed';
-import Component from './components/MyComponent';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Content from './components/Content';
+import HeaderComponent from './components/HeaderComponent';
+import LanguageProvider from './contexts/LanguageContext';
 
 const theme = createTheme({
   lightColors: {},
@@ -10,10 +11,11 @@ const theme = createTheme({
 
 export default function App() {
   return (
-    <SafeAreaProvider>
+    <LanguageProvider>
       <ThemeProvider theme={theme}>
-        <Component />
+        <HeaderComponent />
+        <Content />
       </ThemeProvider>
-    </SafeAreaProvider>
+    </LanguageProvider>
   );
 }

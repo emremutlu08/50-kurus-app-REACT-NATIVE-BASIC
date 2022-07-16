@@ -1,0 +1,10 @@
+{
+  "Content": {
+    "TITLE": "50 KURUŞ",
+    "HEADS": "YAZI",
+    "TAILS": "TURA"
+  },
+  "Button": {
+    "SwitchTheme": "Tema Değiştir"
+  }
+}
