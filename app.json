@@ -1,31 +1,38 @@
 {
   "expo": {
-    "name": "50-kurus-app",
-    "slug": "50-kurus-app",
-    "owner": "emremutlu93",
-    "version": "1.0.0",
-    "orientation": "portrait",
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "package": "com.emremutlujs.ellikurusapp",
+      "versionCode": 2
+    },
+    "assetBundlePatterns": ["**/*"],
     "icon": "./assets/icon.png",
+    "ios": {
+      "supportsTablet": true
+    },
+    "name": "50 Kuruş - Yazı Tura",
+    "orientation": "portrait",
+    "owner": "emremutlu93",
+    "slug": "50-kurus-app",
     "splash": {
+      "backgroundColor": "#ffffff",
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
+    "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e7942ab1-713a-48b1-83de-df739fcaa5df"
+      }
     }
   }
 }
